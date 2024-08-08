@@ -1,0 +1,47 @@
+.snake-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.snake-top-left {
+    height: 100px;
+    width: 15px;
+    background: white;
+}
+
+.snake-top-right {
+    height: 100px;
+    width: 15px;
+    background: white;
+}
+
+.snake-middle {
+    width: 100px;
+    height: 15px;
+    background: white;
+}
+
+.bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.snake-bottom-left {
+    height: 100px;
+    width: 15px;
+    background: white;
+}
+
+.snake-bottom-right {
+    height: 100px;
+    width: 15px;
+    background: white;
+}
