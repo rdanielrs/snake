@@ -1,7 +1,5 @@
-.snake-container {
+/*.snake-container {
     position: absolute;
-    //top: 50%;
-    //left: 50%;
     top: 0px;
     left: 0px;
 }
@@ -24,7 +22,18 @@
     background: white;
 }
 
-.snake-middle {
+.middle {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.snake-middle-left {
+    height: 15px;
+    background: white;
+}
+
+.snake-middle-right {
     //width: 100px;
 
     height: 15px;
@@ -47,4 +56,38 @@
     height: 100px;
     width: 15px;
     background: white;
+}*/
+
+/*.snake-box {
+    display
+}*/
+
+.snake-body {
+    background: white;
+    position: absolute;
+    direction: rtl;
+    display: flex;
+    flex-flow: row-reverse;
+    /*top: 80px;
+    left: 80px;*/
+    &.middle {
+        width: 100px;
+        height: 15px;
+        //top: 100px;
+        //left: 100px;
+    }
+
+    &.top {
+        height: 0px;
+        width: 0px;
+        //left: 200px;
+        //top: 15px;
+    }
+
+    &.bottom {
+        height: 100px;
+        width: 15px;
+        //left: 200px;
+        //top: 100px;
+    }
 }

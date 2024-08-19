@@ -1,11 +1,29 @@
-<div [style.top]="top" [style.left]="left" class="snake-container">
-    <!--<div class="top">
+
+
+<!--<div [style.top]="top" [style.left]="left" class="snake-container">
+    <div class="top">
         <div class="snake-top-left"></div>
         <div class="snake-top-right"></div>
-    </div>-->
-    <div [style.width]="width" class="snake-middle"></div>
-    <!--<div class="bottom">
+    </div>
+    <div class="middle">
+        <div [style.width]="width" class="snake-middle-left"></div>
+        <div [style.width]="width" class="snake-middle-right"></div>
+    </div>
+    <div class="bottom">
         <div class="snake-bottom-left"></div>
         <div class="snake-bottom-right"></div>
-    </div>-->
+    </div>
+</div>-->
+<!--<div class="snake-body-container">
+    <div [style.height]="topHeight" class="snake-body top"></div>
+    <div [style.width]="middleWidth" class="snake-body middle"></div>
+    <div [style.height]="bottomHeight" class="snake-body bottom"></div>
+</div>-->
+
+<!--<div *ngFor="let snake of snakes; index as i;"   class="snake-box">
+    <div [style.height]="snake.height" [style.width]="snake.width" [style.top]="snake.top" [style.left]="snake.left" class="snake-body"></div>
+</div>-->
+<div *ngFor="let snake of snakes;" class="snake-box">
+    <div [style.height]="snake.height" [style.width]="snake.width" [style.top]="snake.top" [style.left]="snake.left" [style.direction]="snake.textDirection" class="snake-body">
+    </div>
 </div>
